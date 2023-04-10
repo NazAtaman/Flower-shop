@@ -1,0 +1,63 @@
+    // Footer
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    &-list{
+        max-width: 169px;
+        width: 100%;
+        display: flex;
+    }
+    &-list__composition, .footer-list__gifts{
+        margin-bottom: 30px;
+    }
+    &-item{
+        display: table-caption;
+    }
+    &-title{
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &-link{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &-below{
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 30px;
+        margin: 30px 0;
+        border-top: 1px solid #E2E4EB;
+        
+
+    }
+    &-below__copy{
+        line-height: 20px;
+    }
+    &-below__cards{
+        img{
+            padding-right: 15px;
+        }
+    }
+    &-below__social{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+
+    }
+    &-below__social-text{
+        padding-right: 30px;
+    }
+    &-below__social-link{
+        padding-right: 15px;
+    }
+    &-coordinates__text{
+        padding: 7px 0;
+    }
+}
+

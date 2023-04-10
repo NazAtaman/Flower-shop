@@ -1,0 +1,101 @@
+.navigation{
+    display: flex;
+    padding: 23px 0;
+    &-stocks{
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-red;
+
+        position: relative;
+        padding-left: 30px;
+        padding-right: 46px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../img/nav-discount.svg);
+            width: 20px;
+            height: 19px;
+        }
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-item{
+        position: relative;
+        margin-right: 69px;
+        cursor: pointer;
+
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: -22px;
+            background-image: url(../img/header/ar-down.svg);
+            width: 12px;
+            height: 8px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &-link{
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-dark-black;
+        
+    }
+    &-item:hover .drop-down{
+        opacity: 1;
+        max-width: 100%;
+        
+    }
+    &-block{
+        padding-left: 63px;
+    }
+    &-block__wedding{
+        padding-right: 35px;
+
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-dark-black;
+    }
+    &-block__reason{
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-dark-black;
+    }
+
+
+
+
+   .drop-down{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    min-width: 80px;
+    display: grid;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+   }
+   .drop-menu{
+        padding: 10px 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #353949;
+        &:hover{
+            color: white;
+            background: #0093A2;
+            border-radius: 5px;
+        }
+       }
+   
+}

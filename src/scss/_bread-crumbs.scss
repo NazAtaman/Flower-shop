@@ -1,0 +1,32 @@
+.bread{
+    &-list{
+        display: flex;
+        align-items: center;
+
+        padding: 15px 0;
+    }
+    &-item{
+        margin-right: 34px;
+        position: relative;
+       &::after{
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: -23px;
+        background-image: url(../img/ar-right.svg);
+        width: 17px;
+        height: 13px;
+       }
+       &:last-child{
+        &::after{
+            display: none;
+        }
+       }
+    }
+    &-link{
+        line-height: 20px;
+        color: $color-dark-black;
+    }
+
+    
+}
